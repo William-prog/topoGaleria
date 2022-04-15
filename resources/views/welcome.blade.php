@@ -252,7 +252,7 @@
                                         <img src="/imagen/Logos/timberland.png" height="50" width="125" alt="" />
                                     </div>
                                     <div class="slide">
-                                        <img src="/imagen/Logos/robbins.jpg" height="50" width="125" alt="" />
+                                        <img src="/imagen/Logos/robins.jpg" height="50" width="125" alt="" />
 
                                     </div>
 
@@ -266,7 +266,7 @@
                                         <img src="/imagen/Logos/timberland.png" height="50" width="125" alt="" />
                                     </div>
                                     <div class="slide">
-                                        <img src="/imagen/Logos/robbins.jpg" height="50" width="125" alt="" />
+                                        <img src="/imagen/Logos/robins.jpg" height="50" width="125" alt="" />
                                     </div>
 
 
