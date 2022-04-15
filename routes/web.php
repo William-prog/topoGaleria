@@ -17,7 +17,7 @@ use App\Models\imagenes;
 
 Route::get('/', function () {
     $imagenes = imagenes::orderBy('id', 'asc')->get();
-    return view('welcome', compact('imagenes'));
+    return view('welcome2', compact('imagenes'));
 });
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {

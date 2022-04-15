@@ -59,185 +59,312 @@
     <div id="gradient" />
     <div class="relative flex items-top justify-center min-h-screen sm:items-center py-0 sm:pt-0">
 
+        <div class="max-w-7xl mx-auto sm:px-0 lg:px-0" style="width: 65%;">
+            <div class="">
+                <style>
+                    .widget {
+                        width: 100%;
+                        height: 40%;
+                        
+                    }
 
-        <div class="max-w-6xl mx-auto sm:px-0 lg:px-0" style="width: 65%;">
+                    .widget p {
+                        display: inline-block;
+                        line-height: 1em;
+                        font-weight: 300;
+                    }
 
-            <div class="mt-1 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                    .fecha {
+                        font-family: arial;
+                        text-align: center;
+                        font-size: 1.5em;
+                        margin-bottom: 5px;
+                        color: black;
+                        /* background: rgba(0, 0, 0); */
+                        padding: 5px;
+                        width: 100%;
+                        margin-top: 4%;
+
+                    }
+
+                    .reloj {
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        width: 100%;
+                        padding: 5px;
+                        font-size: 1.5em;
+                        text-align: center;
+                        color: black;
+                        
+                        /* background: rgba(0, 0, 0); */
+
+                    }
+
+                    .reloj .cajaSegundos {
+                        display: inline-block;
+                    }
+
+                    .reloj .ampm,
+                    .reloj .segundos {
+                        display: block;
+                        font-size: 1rem;
+                    }
+                </style>
 
 
-                <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+                <div class="mt-1 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                    <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
 
-                    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+                        <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
 
-                        @foreach ($imagenes as $imagen)
-                        @if($imagen->id == 1)
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{$imagen->id - 1}}" class="active" aria-current="true" aria-label="Slide {{$imagen->id}}"></button>
-                        @endif
-                        @if($imagen->id != 1)
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{$imagen->id - 1}}" aria-label="Slide {{$imagen->id}}"></button>
-                        @endif
-                        @endforeach
+                            @foreach ($imagenes as $imagen)
+                            @if($imagen->id == 1)
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{$imagen->id - 1}}" class="active" aria-current="true" aria-label="Slide {{$imagen->id}}"></button>
+                            @endif
+                            @if($imagen->id != 1)
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{$imagen->id - 1}}" aria-label="Slide {{$imagen->id}}"></button>
+                            @endif
+                            @endforeach
 
-                    </div>
-                    <div class="carousel-inner relative w-full overflow-hidden">
-                        @foreach ($imagenes as $imagen)
-                        @if($imagen->id == 1)
-                        <div class="carousel-item active relative float-left w-full">
-                            <img src="/imagen/{{$imagen->imagenUrl}}" class="block w-full" alt="..." />
-                            <div class="carousel-caption hidden md:block absolute text-center">
-                                <h5 class="text-xl">{{$imagen->imagenTitulo}}</h5>
-                                <p>{{$imagen->imagenDescripcion}}</p>
-                            </div>
                         </div>
-                        @endif
-                        @if($imagen->id != 1)
-                        <div class="carousel-item relative float-left w-full">
-                            <img src="/imagen/{{$imagen->imagenUrl}}" class="block w-full" alt="..." />
-                            <div class="carousel-caption hidden md:block absolute text-center">
-                                <h5 class="text-xl">{{$imagen->imagenTitulo}}</h5>
-                                <p>{{$imagen->imagenDescripcion}}</p>
+                        <div class="carousel-inner relative w-full overflow-hidden">
+                            @foreach ($imagenes as $imagen)
+                            @if($imagen->id == 1)
+                            <div class="carousel-item active relative float-left w-full">
+                                <img src="/imagen/{{$imagen->imagenUrl}}" class="block w-full" alt="..." />
+                                <div class="carousel-caption hidden md:block absolute text-center">
+                                    <h5 class="text-xl">{{$imagen->imagenTitulo}}</h5>
+                                    <p>{{$imagen->imagenDescripcion}}</p>
+                                </div>
                             </div>
+                            @endif
+                            @if($imagen->id != 1)
+                            <div class="carousel-item relative float-left w-full">
+                                <img src="/imagen/{{$imagen->imagenUrl}}" class="block w-full" alt="..." />
+                                <div class="carousel-caption hidden md:block absolute text-center">
+                                    <h5 class="text-xl">{{$imagen->imagenTitulo}}</h5>
+                                    <p>{{$imagen->imagenDescripcion}}</p>
+                                </div>
+                            </div>
+                            @endif
+                            @endforeach
                         </div>
-                        @endif
-                        @endforeach
+                        <button class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <button class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
-            </div>
 
-            <div class="mt-1 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                <div class="text-center text-sm text-gray-500 sm:text-left">
-                    <div class="flex items-center">
-                        <style>
-                            :root {
-                                --slides-number: 5;
-                                --slide-width: 250px;
-                                --slide-height: 300px;
-                                --animation-time: 10s;
-                            }
+                <div class="mt-1 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                    <div class="text-center text-sm text-gray-500 sm:text-left">
+                        <div class="flex items-center">
 
-                            @keyframes scroll {
-                                0% {
-                                    transform: translateX(0);
+                            <style>
+                                @keyframes scroll {
+                                    0% {
+                                        transform: translateX(0);
+                                    }
+
+                                    100% {
+                                        transform: translateX(calc(-250px * 6));
+                                    }
                                 }
 
-                                100% {
-                                    transform: translateX(calc(-250px * var(--slides-number)));
+                                .sliderH {
+                                    background: white;
+                                    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+                                    height: 50px;
+                                    margin: auto;
+                                    overflow: hidden;
+                                    position: relative;
+                                    width: 960px;
                                 }
-                            }
 
-                            .sliderHorizontal {
-                                background: white;
-                                box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-                                height: 50px;
-                                margin: auto;
-                                overflow: hidden;
-                                position: relative;
-                                width: 960px;
-                            }
+                                .sliderH::before,
+                                .sliderH::after {
+                                    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+                                    content: "";
+                                    height: 50px;
+                                    position: absolute;
+                                    width: 200px;
+                                    z-index: 2;
+                                }
 
-                            .sliderHorizontal::before,
-                            .sliderHorizontal::after {
-                                background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-                                content: "";
-                                height: 100px;
-                                position: absolute;
-                                width: 200px;
-                                z-index: 2;
-                            }
+                                .sliderH::after {
+                                    right: 0;
+                                    top: 0;
+                                    transform: rotateZ(180deg);
+                                }
 
-                            .sliderHorizontal::after {
-                                right: 0;
-                                top: 0;
-                                transform: rotateZ(180deg);
-                            }
+                                .sliderH::before {
+                                    left: 0;
+                                    top: 0;
+                                }
 
-                            .sliderHorizontal::before {
-                                left: 0;
-                                top: 0;
-                            }
+                                .sliderH .slide-track {
+                                    animation: scroll 10s linear infinite;
+                                    display: flex;
+                                    width: calc(250px * 12);
+                                }
 
-                            .sliderHorizontal .slide-track {
-                                animation: scroll var(--animation-time) linear infinite;
-                                display: flex;
-                                width: calc(250px * var(--slides-number) * 2);
-                            }
+                                .sliderH .slide {
+                                    height: 50px;
+                                    width: 250px;
+                                }
+                            </style>
 
-                            .sliderHorizontal .slide {
-                                height: 100px;
-                                width: 250px;
-                            }
 
-                            .original {
-                                display: flex;
-                                /* border: 2px solid red; */
-                            }
-
-                            .repeat {
-                                display: flex;
-                                /* border: 2px solid green; */
-                            }
-                        </style>
-
-                        <div class="sliderHorizontal">
-                            <div class="slide-track">
-                                <div class="original">
+                            <div class="sliderH">
+                                <div class="slide-track">
                                     <div class="slide">
-
+                                        <img src="/imagen/Logos/topo.jpg" style="margin-top: 5px;" height="50" width="125" alt="" />
                                     </div>
                                     <div class="slide">
-                                        <img src="/imagen/Logos/topo.jpg" height="50" width="125" alt="" />
-                                    </div>
-                                    <div class="slide">
-
-                                    </div>
-                                    <div class="slide">
-                                        <img src="/imagen/Logos/micon.png" height="100" width="250" alt="" />
-                                    </div>
-                                    <div class="slide">
-
+                                        <img src="/imagen/Logos/micon.png" style="margin-top: 10px;" height="50" width="125" alt="" />
                                     </div>
                                     <div class="slide">
                                         <img src="/imagen/Logos/timberland.png" height="50" width="125" alt="" />
                                     </div>
-                                </div>
-                                <div class="repeat">
                                     <div class="slide">
-                                        <img src="/imagen/Logos/topo.jpg" height="50" width="125" alt="" />
+                                        <img src="/imagen/Logos/robbins.jpg" height="50" width="125" alt="" />
                                     </div>
                                     <div class="slide">
+                                        <div class="widget">
+                                            <div class="fecha">
+                                                <p id="diaSemana" class="diaSemana"></p>
+                                                <p id="dia" class="dia"></p>
+                                                <p>de</p>
+                                                <p id="mes" class="mes"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="widget">
+                                            <div class="reloj">
+                                                <p id="horas" class="horas"></p>
+                                                <p>:</p>
+                                                <p id="minutos" class="minutos"></p>
+                                                <p>:</p>
+                                                <div class="cajaSegundos">
+                                                    <p id="ampm" class="ampm"></p>
+                                                    <p id="segundos" class="segundos"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <div class="slide">
+                                        <img src="/imagen/Logos/topo.jpg" style="margin-top: 5px;" height="50" width="125" alt="" />
                                     </div>
                                     <div class="slide">
-                                        <img src="/imagen/Logos/micon.png" height="100" width="250" alt="" />
-                                    </div>
-                                    <div class="slide">
-
-                                    </div>
-                                    <div class="slide">
-
+                                        <img src="/imagen/Logos/micon.png" style="margin-top: 10px;" height="50" width="125" alt="" />
                                     </div>
                                     <div class="slide">
                                         <img src="/imagen/Logos/timberland.png" height="50" width="125" alt="" />
                                     </div>
+                                    <div class="slide">
+                                        <img src="/imagen/Logos/robbins.jpg" height="50" width="125" alt="" />
+                                    </div>
+                                    <div class="slide">
+                                        <div class="widget" >
+                                            <div class="fecha" style="margin-top: 30px;">
+                                                <p id="diaSemana" class="diaSemana"></p>
+                                                <p id="dia" class="dia"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="widget">
+                                            <div class="reloj">
+                                                <p id="horas" class="horas"></p>
+                                                <p>:</p>
+                                                <p id="minutos" class="minutos"></p>
+                                                <p>:</p>
+                                                <div class="cajaSegundos">
+                                                    <p id="ampm" class="ampm"></p>
+                                                    <p id="segundos" class="segundos"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
-    </div>
 </body>
 
+
+<script>
+    $(function() {
+        var actualizarHora = function() {
+            var fecha = new Date(),
+                hora = fecha.getHours(),
+                minutos = fecha.getMinutes(),
+                segundos = fecha.getSeconds(),
+                diaSemana = fecha.getDay(),
+                dia = fecha.getDate(),
+                mes = fecha.getMonth(),
+                anio = fecha.getFullYear(),
+                ampm;
+
+            var $pHoras = $("#horas"),
+                $pSegundos = $("#segundos"),
+                $pMinutos = $("#minutos"),
+                $pAMPM = $("#ampm"),
+                $pDiaSemana = $("#diaSemana"),
+                $pDia = $("#dia"),
+                $pMes = $("#mes"),
+                $pAnio = $("#anio");
+            var semana = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
+            var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+            $pDiaSemana.text(semana[diaSemana]);
+            $pDia.text(dia);
+            $pMes.text(meses[mes]);
+            $pAnio.text(anio);
+            if (hora >= 12) {
+                hora = hora - 12;
+                ampm = "PM";
+            } else {
+                ampm = "AM";
+            }
+            if (hora == 0) {
+                hora = 12;
+            }
+            if (hora < 10) {
+                $pHoras.text("0" + hora)
+            } else {
+                $pHoras.text(hora)
+            };
+            if (minutos < 10) {
+                $pMinutos.text("0" + minutos)
+            } else {
+                $pMinutos.text(minutos)
+            };
+            if (segundos < 10) {
+                $pSegundos.text("0" + segundos)
+            } else {
+                $pSegundos.text(segundos)
+            };
+            $pAMPM.text(ampm);
+
+        };
+
+
+        actualizarHora();
+        var intervalo = setInterval(actualizarHora, 1000);
+    });
+</script>
 <script>
     var colors = new Array(
         [255, 215, 146],
@@ -247,7 +374,7 @@
         [198, 83, 20],
         [255, 128, 0]);
 
-// var colors = new Array(
+    // var colors = new Array(
     // [231, 92, 27],
     // [223, 89, 26],
     // [181, 74, 18],
