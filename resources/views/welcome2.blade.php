@@ -44,7 +44,6 @@
         background-color: #000000;
         padding: 0px;
         margin: 0px;
-        overflow-y: hidden;
     }
 
     #gradient {
@@ -243,7 +242,7 @@
                             <div class="sliderH">
                                 <div class="slide-track">
                                     <div class="slide">
-                                        <img src="/imagen/Logos/topo.jpg" style="margin-top: 10px;" height="30" width="100" alt="" />
+                                        <img src="/imagen/Logos/topo.jpg" style="margin-top: 5px;" height="" width="125" alt="" />
                                     </div>
                                     <div class="slide">
                                         <img src="/imagen/Logos/micon.png" style="margin-top: 10px;" height="50" width="125" alt="" />
@@ -256,7 +255,7 @@
                                     </div>
 
                                     <div class="slide">
-                                        <img src="/imagen/Logos/topo.jpg" style="margin-top: 10px;" height="30" width="100" alt="" />
+                                        <img src="/imagen/Logos/topo.jpg" style="margin-top: 5px;" height="" width="125" alt="" />
                                     </div>
                                     <div class="slide">
                                         <img src="/imagen/Logos/micon.png" style="margin-top: 10px;" height="50" width="125" alt="" />

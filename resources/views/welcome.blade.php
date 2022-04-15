@@ -44,7 +44,6 @@
         background-color: #000000;
         padding: 0px;
         margin: 0px;
-        overflow-y: hidden;
     }
 
     #gradient {
@@ -65,7 +64,8 @@
                 <style>
                     .widget {
                         width: 100%;
-                        /* height: 40%; */
+                        height: 40%;
+
                     }
 
                     .widget p {
@@ -77,19 +77,25 @@
                     .fecha {
                         font-family: arial;
                         text-align: center;
-                        font-size: 1.5em;
+                        font-size: 1em;
                         margin-bottom: 5px;
-                        margin-top: 5px;
-                        /* color: black; */
+                        color: black;
+                        /* background: rgba(0, 0, 0); */
+                        padding: 5px;
                         width: 100%;
+                        margin-top: 4%;
+
                     }
 
                     .reloj {
                         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
                         width: 100%;
-                        font-size: 1.5em;
+                        padding: 6px;
+                        font-size: 1.4em;
                         text-align: center;
-                        /* color: black; */
+                        color: black;
+
+                        /* background: rgba(0, 0, 0); */
 
                     }
 
@@ -97,42 +103,17 @@
                         display: inline-block;
                     }
 
-                    .reloj .ampm,
+                    .reloj .ampm {
+                        display: block;
+                        font-size: 0.7rem;
+                    }
+
                     .reloj .segundos {
                         display: block;
-                        font-size: 1rem;
+                        font-size: 0.9rem;
                     }
                 </style>
-                <div class="relative rounded-xl overflow-auto pb-1 pt-1">
-                    <div class="flex flex-row space-x-4 font-mono text-white text-sm font-bold leading-6">
-                        <div class="basis-4/5 h-14 rounded-lg flex items-center justify-center bg-black shadow-lg">
-                            <div class="widget">
-                                <div class="fecha">
-                                    <p id="diaSemana" class="diaSemana"></p>
-                                    <p id="dia" class="dia"></p>
-                                    <p>de</p>
-                                    <p id="mes" class="mes"></p>
-                                    <p>del</p>
-                                    <p id="anio" class="anio"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="basis-1/5 h-14 rounded-lg flex items-center justify-center bg-black shadow-lg">
-                            <div class="widget">
-                                <div class="reloj">
-                                    <p id="horas" class="horas"></p>
-                                    <p>:</p>
-                                    <p id="minutos" class="minutos"></p>
-                                    <p>:</p>
-                                    <div class="cajaSegundos">
-                                        <p id="ampm" class="ampm"></p>
-                                        <p id="segundos" class="segundos"></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
 
                 <div class="mt-1 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
@@ -193,7 +174,7 @@
                                     }
 
                                     100% {
-                                        transform: translateX(calc(-250px * 4));
+                                        transform: translateX(calc(-250px * 6));
                                     }
                                 }
 
@@ -229,9 +210,9 @@
                                 }
 
                                 .sliderH .slide-track {
-                                    animation: scroll 10s linear infinite;
+                                    animation: scroll 20s linear infinite;
                                     display: flex;
-                                    width: calc(250px * 8);
+                                    width: calc(250px * 12);
                                 }
 
                                 .sliderH .slide {
@@ -240,35 +221,82 @@
                                 }
                             </style>
 
+
                             <div class="sliderH">
                                 <div class="slide-track">
                                     <div class="slide">
-                                        <img src="/imagen/Logos/topo.jpg" style="margin-top: 10px;" height="30" width="100" alt="" />
+                                        <img src="/imagen/Logos/timberland.png" height="50" width="125" alt="" />
                                     </div>
                                     <div class="slide">
                                         <img src="/imagen/Logos/micon.png" style="margin-top: 10px;" height="50" width="125" alt="" />
                                     </div>
                                     <div class="slide">
-                                        <img src="/imagen/Logos/timberland.png" height="50" width="125" alt="" />
+                                        <img src="/imagen/Logos/topo.jpg" style="margin-top: 8px;" height="50" width="100" alt="" />
                                     </div>
                                     <div class="slide">
                                         <img src="/imagen/Logos/robins.jpg" height="50" width="125" alt="" />
-
+                                    </div>
+                                    <div class="slide" st>
+                                        <div class="widget">
+                                            <div class="fecha">
+                                                <p style="font-weight: 900;" id="diaSemana" class="diaSemana"></p>
+                                                <p style="font-weight: 900;" id="dia" class="dia"></p>
+                                                <p style="font-weight: 900;">de</p>
+                                                <p style="font-weight: 900;" id="mes" class="mes"></p>
+                                                <p style="font-weight: 900;">del</p>
+                                                <p style="font-weight: 900;" id="anio" class="anio"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="widget">
+                                            <div class="reloj" style="text-align: left;">
+                                                <p style="font-weight: 900;" id="horas" class="horas"></p>
+                                                <p style="font-weight: 900;">:</p>
+                                                <p style="font-weight: 900;" id="minutos" class="minutos"></p>
+                                                <p style="font-weight: 900;">:</p>
+                                                <div class="cajaSegundos">
+                                                    <p style="font-weight: 600;" id="ampm" class="ampm"></p>
+                                                    <p style="font-weight: 700;" id="segundos" class="segundos"></p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <div class="slide">
-                                        <img src="/imagen/Logos/topo.jpg" style="margin-top: 10px;" height="30" width="100" alt="" />
+                                        <img src="/imagen/Logos/timberland.png" height="50" width="125" alt="" />
                                     </div>
                                     <div class="slide">
                                         <img src="/imagen/Logos/micon.png" style="margin-top: 10px;" height="50" width="125" alt="" />
                                     </div>
                                     <div class="slide">
-                                        <img src="/imagen/Logos/timberland.png" height="50" width="125" alt="" />
+                                        <img src="/imagen/Logos/topo.jpg" style="margin-top: 8px;" height="50" width="100" alt="" />
                                     </div>
                                     <div class="slide">
                                         <img src="/imagen/Logos/robins.jpg" height="50" width="125" alt="" />
                                     </div>
-
+                                    <div class="slide">
+                                        <div class="widget">
+                                            <div class="fecha" style="margin-top: 30px;">
+                                                <p id="diaSemana" class="diaSemana"></p>
+                                                <p id="dia" class="dia"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="widget">
+                                            <div class="reloj">
+                                                <p id="horas" class="horas"></p>
+                                                <p>:</p>
+                                                <p id="minutos" class="minutos"></p>
+                                                <p>:</p>
+                                                <div class="cajaSegundos">
+                                                    <p id="ampm" class="ampm"></p>
+                                                    <p id="segundos" class="segundos"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
                             </div>
@@ -303,8 +331,8 @@
                 $pDia = $("#dia"),
                 $pMes = $("#mes"),
                 $pAnio = $("#anio");
-            var semana = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
-            var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+            var semana = ['Domingo,', 'Lunes,', 'Martes,', 'Miercoles,', 'Jueves,', 'Viernes,', 'Sabado,'];
+            var meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 
             $pDiaSemana.text(semana[diaSemana]);
             $pDia.text(dia);
