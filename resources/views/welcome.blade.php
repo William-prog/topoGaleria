@@ -44,11 +44,12 @@
         background-color: #000000;
         padding: 0px;
         margin: 0px;
+        overflow-y: hidden
     }
 
     #gradient {
         width: 100%;
-        height: 800px;
+        height: 2080px;
         padding: 0px;
         margin: 0px;
     }
@@ -134,7 +135,7 @@
                             @foreach ($imagenes as $imagen)
                             @if($imagen->id == 1)
                             <div class="carousel-item active relative float-left w-full">
-                                <img src="/imagen/{{$imagen->imagenUrl}}" class="block w-full" alt="..." />
+                                <img style="border-radius: 5px;" src="/imagen/{{$imagen->imagenUrl}}" class="block w-full" alt="..." />
                                 <div class="carousel-caption hidden md:block absolute text-center">
                                     <h5 class="text-xl">{{$imagen->imagenTitulo}}</h5>
                                     <p>{{$imagen->imagenDescripcion}}</p>
@@ -143,7 +144,7 @@
                             @endif
                             @if($imagen->id != 1)
                             <div class="carousel-item relative float-left w-full">
-                                <img src="/imagen/{{$imagen->imagenUrl}}" class="block w-full" alt="..." />
+                                <img style="border-radius: 5px;" src="/imagen/{{$imagen->imagenUrl}}" class="block w-full" alt="..." />
                                 <div class="carousel-caption hidden md:block absolute text-center">
                                     <h5 class="text-xl">{{$imagen->imagenTitulo}}</h5>
                                     <p>{{$imagen->imagenDescripcion}}</p>
