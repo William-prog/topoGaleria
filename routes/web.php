@@ -20,6 +20,10 @@ Route::get('/', function () {
     return view('welcome', compact('imagenes'));
 });
 
+Route::get('/pdf', function () {
+    return view('welcomePdf');
+});
+
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
     Route::resource('imagenes', ImagenesController::class);
 

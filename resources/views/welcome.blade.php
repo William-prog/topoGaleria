@@ -13,7 +13,7 @@
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -27,8 +27,10 @@
                 }
             }
         }
-    </script>
+    </script> -->
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     @livewireStyles
@@ -59,7 +61,6 @@
 <body class="antialiased">
     <div id="gradient" />
     <div class="relative flex items-top justify-center min-h-screen sm:items-center py-0 sm:pt-0">
-
         <div class="max-w-7xl mx-auto sm:px-0 lg:px-0" style="width: 65%;">
             <div class="">
                 <style>
@@ -117,51 +118,39 @@
 
 
                 <div class="mt-1 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
 
-                        <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-
-                            @foreach ($imagenes as $imagen)
-                            @if($imagen->id == 1)
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{$imagen->id - 1}}" class="active" aria-current="true" aria-label="Slide {{$imagen->id}}"></button>
-                            @endif
-                            @if($imagen->id != 1)
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{$imagen->id - 1}}" aria-label="Slide {{$imagen->id}}"></button>
-                            @endif
-                            @endforeach
-
-                        </div>
-                        <div class="carousel-inner relative w-full overflow-hidden">
-                            @foreach ($imagenes as $imagen)
-                            @if($imagen->id == 1)
-                            <div class="carousel-item active relative float-left w-full">
-                                <img style="border-radius: 5px;" src="/imagen/{{$imagen->imagenUrl}}" class="block w-full" alt="..." />
-                                <div class="carousel-caption hidden md:block absolute text-center">
-                                    <h5 class="text-xl">{{$imagen->imagenTitulo}}</h5>
-                                    <p>{{$imagen->imagenDescripcion}}</p>
-                                </div>
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/imagen/imagenes/img1.jpg" class="d-block w-100" alt="...">
                             </div>
-                            @endif
-                            @if($imagen->id != 1)
-                            <div class="carousel-item relative float-left w-full">
-                                <img style="border-radius: 5px;" src="/imagen/{{$imagen->imagenUrl}}" class="block w-full" alt="..." />
-                                <div class="carousel-caption hidden md:block absolute text-center">
-                                    <h5 class="text-xl">{{$imagen->imagenTitulo}}</h5>
-                                    <p>{{$imagen->imagenDescripcion}}</p>
-                                </div>
+                            <div class="carousel-item">
+                                <img src="/imagen/imagenes/img2.jpg" class="d-block w-100" alt="...">
                             </div>
-                            @endif
-                            @endforeach
+                            <div class="carousel-item">
+                                <img src="/imagen/imagenes/img3.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/imagen/imagenes/img4.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/imagen/imagenes/img5.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/imagen/imagenes/img6.jpg" class="d-block w-100" alt="...">
+                            </div>
                         </div>
-                        <button class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                            <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
+
+
                 </div>
 
                 <div class="mt-1 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
