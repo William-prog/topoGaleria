@@ -134,10 +134,10 @@
                                 <img src="/imagen/imagenes/img4.png" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="/imagen/imagenes/img5.jpg" class="d-block w-100" alt="...">
+                                <img src="/imagen/imagenes/img5.JPG" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="/imagen/imagenes/img6.jpg" class="d-block w-100" alt="...">
+                                <img src="/imagen/imagenes/img6.JPG" class="d-block w-100" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
