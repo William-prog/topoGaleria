@@ -13,24 +13,6 @@
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script> -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     @livewireStyles
@@ -57,376 +39,283 @@
     }
 </style>
 
+<style>
+    /*fonts*/
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    /**/
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h1 {
+        margin: 30px auto 30px auto;
+        text-align: center;
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .slider-rotate__arrow i {
+        font-size: 46px;
+    }
+
+    .position {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #ffffff;
+        font-size: 30px;
+        display: none;
+    }
+
+    .slider-rotate {
+        margin: 0 auto;
+        background-color: none;
+    }
+
+    .slider-rotate__container {
+        margin: 0 auto;
+    }
+
+    #slider-2 {
+        margin: 50px 0;
+    }
+
+
+    /* ------------------------------------------------------- */
+
+
+    /* ------------------------------------------------------- */
+
+
+    /* ------------------------------------------------------- */
+
+
+    /* ------------------------------------------------------- */
+
+
+    /* ------------------------------------------------------- */
+
+
+    /* --                       PLUGIN                      -- */
+
+
+    /* ------------------------------------------------------- */
+
+    .slider-rotate__container {
+        position: relative;
+        width: 960px;
+        height: 500px;
+        visibility: hidden;
+    }
+
+
+    /*  --------------------------------------------------  */
+
+
+    /*  --              ITEMS DISPLAY                     --*/
+
+
+    /*  --------------------------------------------------  */
+
+    .slider-rotate__item {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        opacity: 0;
+        -webkit-transform: translateY(-50%) translateX(-50%) scale(0.8);
+        -moz-transform: translateY(-50%) translateX(-50%) scale(0.8);
+        -ms-transform: translateY(-50%) translateX(-50%) scale(0.8);
+        -o-transform: translateY(-50%) translateX(-50%) scale(0.8);
+        transform: translateY(-50%) translateX(-50%) scale(0.8);
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .slider-rotate__item.slider-rotate__item--next {
+        left: 74%;
+    }
+
+    .slider-rotate__item.slider-rotate__item--prev {
+        left: 26%;
+    }
+
+    .slider-rotate__item.slider-rotate__item--prev,
+    .slider-rotate__item.slider-rotate__item--next {
+        opacity: 0.7;
+        z-index: 2;
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -ms-filter: blur(3px);
+        -o-filter: blur(3px);
+        filter: blur(3px);
+    }
+
+    .slider-rotate__item.slider-rotate__item--next-2 {
+        left: 90%;
+    }
+
+    .slider-rotate__item.slider-rotate__item--prev-2 {
+        left: 10%;
+    }
+
+    .slider-rotate__item.slider-rotate__item--next-2,
+    .slider-rotate__item.slider-rotate__item--prev-2 {
+        opacity: 0.4;
+        z-index: 2;
+        -webkit-transform: translateY(-50%) translateX(-50%) scale(0.3);
+        -moz-transform: translateY(-50%) translateX(-50%) scale(0.3);
+        -ms-transform: translateY(-50%) translateX(-50%) scale(0.3);
+        -o-transform: translateY(-50%) translateX(-50%) scale(0.3);
+        transform: translateY(-50%) translateX(-50%) scale(0.3);
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -ms-filter: blur(3px);
+        -o-filter: blur(3px);
+        filter: blur(3px);
+    }
+
+    .slider-rotate__item.slider-rotate__item--active {
+        z-index: 2;
+        opacity: 1;
+        z-index: 5;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+        -moz-transform: translateY(-50%) translateX(-50%) scale(1);
+        -ms-transform: translateY(-50%) translateX(-50%) scale(1);
+        -o-transform: translateY(-50%) translateX(-50%) scale(1);
+        transform: translateY(-50%) translateX(-50%) scale(1);
+        -webkit-filter: blur(0);
+        -moz-filter: blur(0);
+        -ms-filter: blur(0);
+        -o-filter: blur(0);
+        filter: blur(0);
+    }
+
+
+    /*  --------------------------------------------------  */
+
+
+    /*  --                    ARROWS                      --*/
+
+
+    /*  --------------------------------------------------  */
+
+    .slider-rotate__container .slider-rotate__arrow {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: #000000;
+        position: absolute;
+        top: 50%;
+        margin-top: -25px;
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+    }
+
+    .slider-rotate__container .slider-rotate__arrow:hover {
+        background: #ffffff;
+    }
+
+    .slider-rotate__container .slider-rotate__arrow:hover i {
+        color: #000000;
+    }
+
+    .slider-rotate__container .slider-rotate__arrow.slider-rotate__arrow--left {
+        left: 0;
+    }
+
+    .slider-rotate__container .slider-rotate__arrow.slider-rotate__arrow--right {
+        right: 0;
+    }
+</style>
+
 
 <body class="antialiased">
     <div id="gradient" />
     <div class="relative flex items-top justify-center min-h-screen sm:items-center py-0 sm:pt-0">
-        <div class="max-w-7xl mx-auto sm:px-0 lg:px-0" style="width: 100%;">
-            <div class="">
-                <style>
-                    .widget {
-                        width: 100%;
-                        height: 40%;
+        <style>
+            .widget {
+                width: 100%;
+                height: 40%;
 
-                    }
+            }
 
-                    .widget p {
-                        display: inline-block;
-                        line-height: 1em;
-                        font-weight: 300;
-                    }
+            .widget p {
+                display: inline-block;
+                line-height: 1em;
+                font-weight: 300;
+            }
 
-                    .fecha {
-                        font-family: arial;
-                        text-align: center;
-                        font-size: 1em;
-                        margin-bottom: 5px;
-                        color: black;
-                        /* background: rgba(0, 0, 0); */
-                        padding: 5px;
-                        width: 100%;
-                        margin-top: 4%;
+            .fecha {
+                font-family: arial;
+                text-align: center;
+                font-size: 1em;
+                margin-bottom: 5px;
+                color: black;
+                /* background: rgba(0, 0, 0); */
+                padding: 5px;
+                width: 100%;
+                margin-top: 4%;
 
-                    }
+            }
 
-                    .reloj {
-                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-                        width: 100%;
-                        padding: 6px;
-                        font-size: 1.4em;
-                        text-align: center;
-                        color: black;
+            .reloj {
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                width: 100%;
+                padding: 6px;
+                font-size: 1.4em;
+                text-align: center;
+                color: black;
 
-                        /* background: rgba(0, 0, 0); */
+                /* background: rgba(0, 0, 0); */
 
-                    }
+            }
 
-                    .reloj .cajaSegundos {
-                        display: inline-block;
-                    }
+            .reloj .cajaSegundos {
+                display: inline-block;
+            }
 
-                    .reloj .ampm {
-                        display: block;
-                        font-size: 0.7rem;
-                    }
+            .reloj .ampm {
+                display: block;
+                font-size: 0.7rem;
+            }
 
-                    .reloj .segundos {
-                        display: block;
-                        font-size: 0.9rem;
-                    }
-                </style>
+            .reloj .segundos {
+                display: block;
+                font-size: 0.9rem;
+            }
+        </style>
 
 
-                <div class="dark:bg-gray-800 overflow-hidden">
-                    <div class="row">
-                        <div class="col-3">
-                            <div style="margin-top: 70%;" class="bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                                <div id="carouselExampleFadeDespues" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf12.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf1.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf2.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf3.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf4.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf5.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf6.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf7.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf8.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf9.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf10.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf11.jpg" class="d-block" alt="...">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFadeDespues" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFadeDespues" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="mt-1 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                                <div id="carouselExampleFade" class="carousel slide carousel-fade sm:rounded-lg" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf1.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf2.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf3.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf4.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf5.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf6.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf7.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf8.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf9.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf10.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf11.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf12.jpg" class="d-block" alt="...">
-                                        </div>
-                                    </div>
-                                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button> -->
-                                </div>
-                            </div>
-                            <div class="mt-1 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                                <div class="text-center text-sm text-gray-500 sm:text-left">
-                                    <div class="flex items-center">
+        <div class="dark:bg-gray-800 overflow-hidden">
+            <!--        DISPLAY 3 ITENS        -->
+            <div class="slider-rotate" id="slider-2">
 
-                                        <style>
-                                            @keyframes scroll {
-                                                0% {
-                                                    transform: translateX(0);
-                                                }
+                <div class="slider-rotate__container">
 
-                                                100% {
-                                                    transform: translateX(calc(-250px * 6));
-                                                }
-                                            }
+                    <!-- ITENS -->
+                    <div class="slider-rotate__item "><span class="position">1</span><img src="/imagen/pdf/pdf1.jpg"></div>
+                    <div class="slider-rotate__item"><span class="position">2</span><img src="/imagen/pdf/pdf2.jpg"></div>
+                    <div class="slider-rotate__item"><span class="position">3</span><img src="/imagen/pdf/pdf3.jpg"></div>
+                    <div class="slider-rotate__item"><span class="position">4</span><img src="/imagen/pdf/pdf4.jpg"></div>
+                    <div class="slider-rotate__item"><span class="position">5</span><img src="/imagen/pdf/pdf5.jpg"></div>
+                    <div class="slider-rotate__item"><span class="position">6</span><img src="/imagen/pdf/pdf6.jpg"></div>
+                    <div class="slider-rotate__item"><span class="position">7</span><img src="/imagen/pdf/pdf7.jpg"></div>
+                    <div class="slider-rotate__item"><span class="position">8</span><img src="/imagen/pdf/pdf8.jpg"></div>
 
-                                            .sliderH {
-                                                background: white;
-                                                box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-                                                height: 50px;
-                                                margin: auto;
-                                                overflow: hidden;
-                                                position: relative;
-                                                width: 960px;
-                                            }
-
-                                            .sliderH::before,
-                                            .sliderH::after {
-                                                background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-                                                content: "";
-                                                height: 50px;
-                                                position: absolute;
-                                                width: 200px;
-                                                z-index: 2;
-                                            }
-
-                                            .sliderH::after {
-                                                right: 0;
-                                                top: 0;
-                                                transform: rotateZ(180deg);
-                                            }
-
-                                            .sliderH::before {
-                                                left: 0;
-                                                top: 0;
-                                            }
-
-                                            .sliderH .slide-track {
-                                                animation: scroll 20s linear infinite;
-                                                display: flex;
-                                                width: calc(250px * 12);
-                                            }
-
-                                            .sliderH .slide {
-                                                height: 50px;
-                                                width: 250px;
-                                            }
-                                        </style>
-
-                                        <div class="sliderH">
-                                            <div class="slide-track">
-                                                <div class="slide">
-                                                    <img src="/imagen/Logos/timberland.png" height="50" width="125" alt="" />
-                                                </div>
-                                                <div class="slide">
-                                                    <img src="/imagen/Logos/micon.png" style="margin-top: 10px;" height="50" width="125" alt="" />
-                                                </div>
-                                                <div class="slide">
-                                                    <img src="/imagen/Logos/topo.jpg" style="margin-top: 8px;" height="50" width="100" alt="" />
-                                                </div>
-                                                <div class="slide">
-                                                    <img src="/imagen/Logos/robins.jpg" height="50" width="125" alt="" />
-                                                </div>
-                                                <div class="slide" st>
-                                                    <div class="widget">
-                                                        <div class="fecha">
-                                                            <p style="font-weight: 900;" id="diaSemana" class="diaSemana"></p>
-                                                            <p style="font-weight: 900;" id="dia" class="dia"></p>
-                                                            <p style="font-weight: 900;">de</p>
-                                                            <p style="font-weight: 900;" id="mes" class="mes"></p>
-                                                            <p style="font-weight: 900;">del</p>
-                                                            <p style="font-weight: 900;" id="anio" class="anio"></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide">
-                                                    <div class="widget">
-                                                        <div class="reloj" style="text-align: left;">
-                                                            <p style="font-weight: 900;" id="horas" class="horas"></p>
-                                                            <p style="font-weight: 900;">:</p>
-                                                            <p style="font-weight: 900;" id="minutos" class="minutos"></p>
-                                                            <p style="font-weight: 900;">:</p>
-                                                            <div class="cajaSegundos">
-                                                                <p style="font-weight: 600;" id="ampm" class="ampm"></p>
-                                                                <p style="font-weight: 700;" id="segundos" class="segundos"></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="slide">
-                                                    <img src="/imagen/Logos/timberland.png" height="50" width="125" alt="" />
-                                                </div>
-                                                <div class="slide">
-                                                    <img src="/imagen/Logos/micon.png" style="margin-top: 10px;" height="50" width="125" alt="" />
-                                                </div>
-                                                <div class="slide">
-                                                    <img src="/imagen/Logos/topo.jpg" style="margin-top: 8px;" height="50" width="100" alt="" />
-                                                </div>
-                                                <div class="slide">
-                                                    <img src="/imagen/Logos/robins.jpg" height="50" width="125" alt="" />
-                                                </div>
-                                                <div class="slide">
-                                                    <div class="widget">
-                                                        <div class="fecha" style="margin-top: 30px;">
-                                                            <p id="diaSemana" class="diaSemana"></p>
-                                                            <p id="dia" class="dia"></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide">
-                                                    <div class="widget">
-                                                        <div class="reloj">
-                                                            <p id="horas" class="horas"></p>
-                                                            <p>:</p>
-                                                            <p id="minutos" class="minutos"></p>
-                                                            <p>:</p>
-                                                            <div class="cajaSegundos">
-                                                                <p id="ampm" class="ampm"></p>
-                                                                <p id="segundos" class="segundos"></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div style="margin-top: 70%;" class="bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                                <div id="carouselExampleFadeAntes" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf2.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf3.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf4.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf5.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf6.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf7.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf8.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf9.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf10.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf11.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf12.jpg" class="d-block" alt="...">
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="40000">
-                                            <img src="/imagen/pdf/pdf1.jpg" class="d-block" alt="...">
-                                        </div>
-                                    </div>
-                                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFadeAntes" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button> -->
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFadeAntes" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--  -->
-
-
+                    <!-- NAVIGATION -->
+                    <!-- <span class="slider-rotate__arrow slider-rotate__arrow--right js-slider-rotate-arrow" data-action="next"><i class="fa fa-angle-right fa-3x"></i></span>
+                                    <span class="slider-rotate__arrow slider-rotate__arrow--left js-slider-rotate-arrow" data-action="prev"><i class="fa fa-angle-left fa-3x"></i></span> -->
 
                 </div>
-
-
             </div>
         </div>
+    </div>
 </body>
 
 
@@ -560,6 +449,306 @@
     }
 
     setInterval(updateGradient, 10);
+</script>
+
+
+<script>
+    $(function() {
+
+        var s1 = $('#slider').sliderRotate({
+            displayItems: 5
+        });
+        var s2 = $('#slider-2').sliderRotate({
+            autoSlide: true
+        });
+
+    });
+
+    //-------------------------------------------
+    //based on : https://www.jqueryscript.net/demo/Basic-3D-Image-Rotator-with-jQuery-CSS3-rotateSlider/
+    // plugin template by https://jqueryboilerplate.com/
+    ;
+    (function($, window, document, undefined) {
+
+        "use strict";
+
+        var pluginName = "sliderRotate",
+            dataKey = "plugin_" + pluginName;
+
+        var SliderRotate = function(element, options) {
+
+            this.plugin_element = $(element);
+            this.itemClass;
+            this.arrowClass;
+            this.$item;
+            this.$arrow;
+            this.$sliderContainer;
+            this.numItens;
+            this.indexActive;
+            this.displayItens;
+            this.autoSlide;
+            this.slider_timer;
+            this.time;
+
+            this.PREV_CLASS = "slider-rotate__item--prev";
+            this.PREV2_CLASS = "slider-rotate__item--prev-2";
+            this.NEXT_CLASS = "slider-rotate__item--next";
+            this.NEXT2_CLASS = "slider-rotate__item--next-2";
+            this.ACTIVE_CLASS = "slider-rotate__item--active";
+
+            this.CLASS_DISPLAY_3 = "slider-rotate--3";
+            this.CLASS_DISPLAY_5 = "slider-rotate--5";
+
+            this.DISPLAY_3 = 3;
+            this.DISPLAY_5 = 5;
+
+            this.SLIDER_CONTAINER = "slider-rotate__container";
+
+            this.options = {
+                time: 4,
+                autoSlide: false,
+                displayItems: 3,
+                activate: function() {}
+            };
+
+            this.init(options);
+
+        };
+
+        SliderRotate.prototype = {
+            init: function(options) {
+
+                _init(options, this);
+
+            },
+            destroy: function() {
+                this.plugin_element.unbind().removeData();
+                $('*', this.plugin_element).unbind().removeData();
+                this.$sliderContainer.unbind('mouseenter.slider');
+                this.$sliderContainer.unbind('mouseleave.slider');
+                _pauseSlide(this); //remove timer
+            }
+        };
+
+        function _init(__options__, __this__) {
+
+            //---------------------------------
+            //---------------------------------
+            var opts = __this__.options;
+            $.extend(opts, __options__);
+            opts.activate.call(__this__);
+            //---------------------------------
+            //---------------------------------
+            __this__.displayItens = (opts.displayItems == 3 || opts.displayItems == 5) ? opts.displayItems : __this__.DISPLAY_3;
+            __this__.itemClass = opts.itemClass || 'slider-rotate__item';
+            __this__.arrowClass = opts.arrowClass || 'js-slider-rotate-arrow';
+            __this__.$item = __this__.plugin_element.find('.' + __this__.itemClass);
+            __this__.$arrow = __this__.plugin_element.find('.' + __this__.arrowClass);
+            __this__.numItens = __this__.$item.length;
+            __this__.indexActive = 0;
+            __this__.$sliderContainer = $("." + __this__.SLIDER_CONTAINER);
+            __this__.autoSlide = opts.autoSlide;
+            __this__.time = opts.time;
+
+            //add class to change layout by 3 or 5 itens
+            __this__.plugin_element.addClass((__this__.displayItens == __this__.DISPLAY_3) ? __this__.CLASS_DISPLAY_3 : __this__.CLASS_DISPLAY_5);
+
+            //start items positions
+            _moveSlide(__this__.indexActive, __this__);
+
+            //show container to prevent layout issues
+            setTimeout(function() {
+                __this__.$sliderContainer.css("visibility", "visible");
+            }, 400);
+
+            //item mouse event
+            __this__.$item.on('click.rotate', function() {
+
+                //prevent click on active item
+                if ($(this).hasClass(__this__.ACTIVE_CLASS)) return false;
+
+                //move slide to the desired index
+                _moveSlide($(this).index(), __this__);
+
+                return false;
+            });
+
+            //arrow mouse event
+            __this__.$arrow.on('click.rotate', function() {
+
+                //action (prev or next)
+                var _action = $(this).data('action');
+
+                if (_action == 'next') {
+
+                    //move slide
+                    _moveNext(__this__);
+
+                } else if (_action == 'prev') {
+
+                    //move slide
+                    _movePrev(__this__);
+
+                }
+
+            });
+
+            if (__this__.autoSlide) {
+                _autoSlide(__this__);
+            }
+        }
+
+        //auto slide
+        function _autoSlide(__this__) {
+            _pauseSlide(__this__); // remove timer
+
+            var _miliseconds = Number(__this__.time) * 1000; // converts to miliseconds
+            __this__.slider_timer = setTimeout(function() {
+                _moveNext(__this__);
+            }, _miliseconds);
+
+            //stop items from auto slide
+            __this__.$sliderContainer.unbind('mouseenter.slider').on('mouseenter.slider', function() {
+                _pauseSlide(__this__); //remove timer
+            });
+
+            //back to auto slide
+            __this__.$sliderContainer.unbind('mouseleave.slider').on('mouseleave.slider', function() {
+                _autoSlide(__this__);
+            });
+
+        }
+
+        //--------------
+        //pause slide
+        function _pauseSlide(__this__) {
+            clearTimeout(__this__.slider_timer);
+        }
+
+        //move slide to the next item
+        function _moveNext(__this__) {
+
+            var _index = (__this__.indexActive == __this__.numItens - 1) ? 0 : (__this__.indexActive + 1);
+
+            _moveSlide(_index, __this__);
+
+        }
+
+        //move slide to the previous item
+        function _movePrev(__this__) {
+
+            var _index = (__this__.indexActive == 0) ? (__this__.numItens - 1) : (__this__.indexActive - 1);
+
+            _moveSlide(_index, __this__);
+
+        }
+
+        function _moveSlide(__index__, __this__) {
+
+            __this__.indexActive = __index__;
+
+            // removing all classes
+            __this__.plugin_element.find('.' + __this__.ACTIVE_CLASS).removeClass(__this__.ACTIVE_CLASS);
+            __this__.plugin_element.find('.' + __this__.NEXT_CLASS).removeClass(__this__.NEXT_CLASS);
+            __this__.plugin_element.find('.' + __this__.PREV_CLASS).removeClass(__this__.PREV_CLASS);
+            __this__.plugin_element.find('.' + __this__.PREV2_CLASS).removeClass(__this__.PREV2_CLASS);
+            __this__.plugin_element.find('.' + __this__.NEXT2_CLASS).removeClass(__this__.NEXT2_CLASS);
+
+            //if active index is the last item
+            if (__index__ == __this__.numItens - 1) {
+
+                __this__.$item.eq(0).addClass(__this__.NEXT_CLASS);
+
+                if (__this__.displayItens == __this__.DISPLAY_5) {
+                    __this__.$item.eq(1).addClass(__this__.NEXT2_CLASS);
+                }
+
+            }
+
+            //if active index is the first item
+            if (__index__ == 0) {
+
+                __this__.$item.eq(__this__.numItens - 1).addClass(__this__.PREV_CLASS);
+
+                if (__this__.displayItens == __this__.DISPLAY_5) {
+                    __this__.$item.eq(__this__.numItens - 2).addClass(__this__.PREV2_CLASS);
+                }
+
+            }
+
+            // loop through all items
+            __this__.$item.each(function(index) {
+
+                if (index == __index__) {
+
+                    __this__.$item.eq(index).addClass(__this__.ACTIVE_CLASS);
+
+                }
+
+                if (index == __index__ + 1) {
+
+                    __this__.$item.eq(index).addClass(__this__.NEXT_CLASS);
+
+                }
+
+                if (index == __index__ - 1) {
+
+                    __this__.$item.eq(index).addClass(__this__.PREV_CLASS);
+
+                }
+
+                //just addClass if display 5 items
+                if (__this__.displayItens == __this__.DISPLAY_5) {
+
+                    if (index == __index__ + 2) {
+
+                        __this__.$item.eq(index).addClass(__this__.NEXT2_CLASS);
+
+                    }
+
+                    if (__index__ == (__this__.numItens - 2)) {
+                        __this__.$item.eq(0).addClass(__this__.NEXT2_CLASS);
+                    }
+
+                    if ((__index__ - 2) == -1) {
+                        __this__.$item.eq(__this__.numItens - 1).addClass(__this__.PREV2_CLASS);
+                    }
+
+                    if (index == __index__ - 2) {
+                        __this__.$item.eq(index).addClass(__this__.PREV2_CLASS);
+                    }
+
+                }
+
+                if (__this__.autoSlide) {
+                    _autoSlide(__this__);
+                }
+
+            });
+
+        }
+
+        //----------------------------------------------------
+        //----------------------------------------------------
+        //----------------------------------------------------
+        //----------------------------------------------------
+        $.fn[pluginName] = function(options) {
+
+            var plugin = this.data(dataKey);
+
+            if (plugin instanceof SliderRotate) {
+                if (typeof options !== 'undefined') {
+                    plugin.init(options);
+                }
+            } else {
+                plugin = new SliderRotate(this, options);
+                this.data(dataKey, plugin);
+            }
+
+            return plugin;
+        };
+
+    }(jQuery, window, document));
 </script>
 
 </html>

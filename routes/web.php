@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('welcome', compact('imagenes'));
 });
 
-Route::get('/pdf', function () {
+Route::get('/UndergroundMining', function () {
     return view('welcomePdf');
 });
 

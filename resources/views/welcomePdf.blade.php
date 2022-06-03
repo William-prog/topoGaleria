@@ -123,28 +123,28 @@
                             <div style="margin-top: 70%;" class="bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                                 <div id="carouselExampleFadeDespues" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active">
+                                        <div class="carousel-item active" >
                                             <img src="/imagen/pdf/pdf8.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf1.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf2.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf3.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf4.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf5.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf6.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf7.jpg" class="d-block" alt="...">
                                         </div>
                                     </div>
@@ -163,28 +163,28 @@
                             <div class="mt-1 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                                 <div id="carouselExampleFade" class="carousel slide carousel-fade sm:rounded-lg" data-bs-ride="carousel">
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active">
+                                        <div class="carousel-item active" >
                                             <img src="/imagen/pdf/pdf1.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf2.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf3.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf4.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf5.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  data-bs-interval="12000">
                                             <img src="/imagen/pdf/pdf6.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf7.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf8.jpg" class="d-block" alt="...">
                                         </div>
                                     </div>
@@ -336,28 +336,28 @@
                             <div style="margin-top: 70%;" class="bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                                 <div id="carouselExampleFadeAntes" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active">
+                                        <div class="carousel-item active" >
                                             <img src="/imagen/pdf/pdf2.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf3.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf4.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf5.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf6.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf7.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf8.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item"  >
                                             <img src="/imagen/pdf/pdf1.jpg" class="d-block" alt="...">
                                         </div>
                                     </div>
