@@ -123,29 +123,41 @@
                             <div style="margin-top: 70%;" class="bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                                 <div id="carouselExampleFadeDespues" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="/imagen/pdf/pdf8.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item active" data-bs-interval="40000">
+                                            <img src="/imagen/pdf/pdf12.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf1.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf2.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf3.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf4.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf5.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf6.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf7.jpg" class="d-block" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="40000">
+                                            <img src="/imagen/pdf/pdf8.jpg" class="d-block" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="40000">
+                                            <img src="/imagen/pdf/pdf9.jpg" class="d-block" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="40000">
+                                            <img src="/imagen/pdf/pdf10.jpg" class="d-block" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="40000">
+                                            <img src="/imagen/pdf/pdf11.jpg" class="d-block" alt="...">
                                         </div>
                                     </div>
                                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFadeDespues" data-bs-slide="prev">
@@ -163,31 +175,51 @@
                             <div class="mt-1 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                                 <div id="carouselExampleFade" class="carousel slide carousel-fade sm:rounded-lg" data-bs-ride="carousel">
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active">
+                                        <div class="carousel-item active" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf1.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf2.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf3.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf4.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf5.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf6.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf7.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf8.jpg" class="d-block" alt="...">
                                         </div>
+                                        <div class="carousel-item" data-bs-interval="40000">
+                                            <img src="/imagen/pdf/pdf9.jpg" class="d-block" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="40000">
+                                            <img src="/imagen/pdf/pdf10.jpg" class="d-block" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="40000">
+                                            <img src="/imagen/pdf/pdf11.jpg" class="d-block" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="40000">
+                                            <img src="/imagen/pdf/pdf12.jpg" class="d-block" alt="...">
+                                        </div>
                                     </div>
+                                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button> -->
                                 </div>
                             </div>
                             <div class="mt-1 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
@@ -236,33 +268,33 @@
                                                 top: 0;
                                             }
 
-                                            .sliderH .slideH-track {
+                                            .sliderH .slide-track {
                                                 animation: scroll 20s linear infinite;
                                                 display: flex;
                                                 width: calc(250px * 12);
                                             }
 
-                                            .sliderH .slideH {
+                                            .sliderH .slide {
                                                 height: 50px;
                                                 width: 250px;
                                             }
                                         </style>
 
                                         <div class="sliderH">
-                                            <div class="slideH-track">
-                                                <div class="slideH">
+                                            <div class="slide-track">
+                                                <div class="slide">
                                                     <img src="/imagen/Logos/timberland.png" height="50" width="125" alt="" />
                                                 </div>
-                                                <div class="slideH">
+                                                <div class="slide">
                                                     <img src="/imagen/Logos/micon.png" style="margin-top: 10px;" height="50" width="125" alt="" />
                                                 </div>
-                                                <div class="slideH">
+                                                <div class="slide">
                                                     <img src="/imagen/Logos/topo.jpg" style="margin-top: 8px;" height="50" width="100" alt="" />
                                                 </div>
-                                                <div class="slideH">
+                                                <div class="slide">
                                                     <img src="/imagen/Logos/robins.jpg" height="50" width="125" alt="" />
                                                 </div>
-                                                <div class="slideH" st>
+                                                <div class="slide" st>
                                                     <div class="widget">
                                                         <div class="fecha">
                                                             <p style="font-weight: 900;" id="diaSemana" class="diaSemana"></p>
@@ -274,7 +306,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="slideH">
+                                                <div class="slide">
                                                     <div class="widget">
                                                         <div class="reloj" style="text-align: left;">
                                                             <p style="font-weight: 900;" id="horas" class="horas"></p>
@@ -289,19 +321,19 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="slideH">
+                                                <div class="slide">
                                                     <img src="/imagen/Logos/timberland.png" height="50" width="125" alt="" />
                                                 </div>
-                                                <div class="slideH">
+                                                <div class="slide">
                                                     <img src="/imagen/Logos/micon.png" style="margin-top: 10px;" height="50" width="125" alt="" />
                                                 </div>
-                                                <div class="slideH">
+                                                <div class="slide">
                                                     <img src="/imagen/Logos/topo.jpg" style="margin-top: 8px;" height="50" width="100" alt="" />
                                                 </div>
-                                                <div class="slideH">
+                                                <div class="slide">
                                                     <img src="/imagen/Logos/robins.jpg" height="50" width="125" alt="" />
                                                 </div>
-                                                <div class="slideH">
+                                                <div class="slide">
                                                     <div class="widget">
                                                         <div class="fecha" style="margin-top: 30px;">
                                                             <p id="diaSemana" class="diaSemana"></p>
@@ -309,7 +341,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="slideH">
+                                                <div class="slide">
                                                     <div class="widget">
                                                         <div class="reloj">
                                                             <p id="horas" class="horas"></p>
@@ -336,28 +368,40 @@
                             <div style="margin-top: 70%;" class="bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                                 <div id="carouselExampleFadeAntes" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active">
+                                        <div class="carousel-item active" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf2.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf3.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf4.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf5.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf6.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf7.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf8.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="40000">
+                                            <img src="/imagen/pdf/pdf9.jpg" class="d-block" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="40000">
+                                            <img src="/imagen/pdf/pdf10.jpg" class="d-block" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="40000">
+                                            <img src="/imagen/pdf/pdf11.jpg" class="d-block" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="40000">
+                                            <img src="/imagen/pdf/pdf12.jpg" class="d-block" alt="...">
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="40000">
                                             <img src="/imagen/pdf/pdf1.jpg" class="d-block" alt="...">
                                         </div>
                                     </div>
@@ -517,6 +561,5 @@
 
     setInterval(updateGradient, 10);
 </script>
-
 
 </html>
