@@ -119,72 +119,68 @@
 
                 <div class="dark:bg-gray-800 overflow-hidden">
                     <div class="row">
-                        <div class="col-3">
+                        <!-- <div class="col-3">
                             <div style="margin-top: 70%;" class="bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                                 <div id="carouselExampleFadeDespues" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active" data-bs-interval="22000">
-                                            <img src="/imagen/pdf/pdf8.jpg" class="d-block" alt="...">
+                                            <img src="/imagen/pdfD/pdf8.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="22000">
-                                            <img src="/imagen/pdf/pdf1.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item"  data-bs-interval="21000">
+                                            <img src="/imagen/pdfD/pdf1.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="22000">
-                                            <img src="/imagen/pdf/pdf2.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item"  data-bs-interval="20000">
+                                            <img src="/imagen/pdfD/pdf2.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="22000">
-                                            <img src="/imagen/pdf/pdf3.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item"  data-bs-interval="19000">
+                                            <img src="/imagen/pdfD/pdf3.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="22000">
-                                            <img src="/imagen/pdf/pdf4.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item"  data-bs-interval="18000">
+                                            <img src="/imagen/pdfD/pdf4.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="22000">
-                                            <img src="/imagen/pdf/pdf5.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item"  data-bs-interval="17000">
+                                            <img src="/imagen/pdfD/pdf5.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="22000">
-                                            <img src="/imagen/pdf/pdf6.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item"  data-bs-interval="16000">
+                                            <img src="/imagen/pdfD/pdf6.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="22000">
-                                            <img src="/imagen/pdf/pdf7.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item"  data-bs-interval="15000">
+                                            <img src="/imagen/pdfD/pdf7.jpg" class="d-block" alt="...">
                                         </div>
                                     </div>
                                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFadeDespues" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFadeDespues" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button> -->
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-6">
                             <div class="mt-1 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                                 <div id="carouselExampleFade" class="carousel slide carousel-fade sm:rounded-lg" data-bs-ride="carousel">
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active" data-bs-interval="21000">
+                                        <div class="carousel-item active" data-bs-interval="2100">
                                             <img src="/imagen/pdf/pdf1.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="21000">
+                                        <div class="carousel-item"  data-bs-interval="2000">
                                             <img src="/imagen/pdf/pdf2.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="21000">
+                                        <div class="carousel-item"  data-bs-interval="1900">
                                             <img src="/imagen/pdf/pdf3.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="21000">
+                                        <div class="carousel-item"  data-bs-interval="1800">
                                             <img src="/imagen/pdf/pdf4.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="21000">
+                                        <div class="carousel-item"  data-bs-interval="1700">
                                             <img src="/imagen/pdf/pdf5.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="12000">
+                                        <div class="carousel-item"  data-bs-interval="1800">
                                             <img src="/imagen/pdf/pdf6.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="21000">
+                                        <div class="carousel-item"  data-bs-interval="1700">
                                             <img src="/imagen/pdf/pdf7.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="21000">
+                                        <div class="carousel-item"  data-bs-interval="1600">
                                             <img src="/imagen/pdf/pdf8.jpg" class="d-block" alt="...">
                                         </div>
                                     </div>
@@ -332,46 +328,46 @@
 
                             </div>
                         </div>
-                        <div class="col-3">
+                        <!-- <div class="col-3">
                             <div style="margin-top: 70%;" class="bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                                 <div id="carouselExampleFadeAntes" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active" data-bs-interval="20000">
-                                            <img src="/imagen/pdf/pdf2.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item active" data-bs-interval="2000">
+                                            <img src="/imagen/pdfD/pdf2.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="20000">
-                                            <img src="/imagen/pdf/pdf3.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item"  data-bs-interval="2000">
+                                            <img src="/imagen/pdfD/pdf3.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="20000">
-                                            <img src="/imagen/pdf/pdf4.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item"  data-bs-interval="2000">
+                                            <img src="/imagen/pdfD/pdf4.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="20000">
-                                            <img src="/imagen/pdf/pdf5.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item"  data-bs-interval="2000">
+                                            <img src="/imagen/pdfD/pdf5.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="20000">
-                                            <img src="/imagen/pdf/pdf6.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item"  data-bs-interval="2000">
+                                            <img src="/imagen/pdfD/pdf6.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="20000">
-                                            <img src="/imagen/pdf/pdf7.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item"  data-bs-interval="2000">
+                                            <img src="/imagen/pdfD/pdf7.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="20000">
-                                            <img src="/imagen/pdf/pdf8.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item"  data-bs-interval="2000">
+                                            <img src="/imagen/pdfD/pdf8.jpg" class="d-block" alt="...">
                                         </div>
-                                        <div class="carousel-item"  data-bs-interval="20000">
-                                            <img src="/imagen/pdf/pdf1.jpg" class="d-block" alt="...">
+                                        <div class="carousel-item"  data-bs-interval="2000">
+                                            <img src="/imagen/pdfD/pdf1.jpg" class="d-block" alt="...">
                                         </div>
                                     </div>
-                                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFadeAntes" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFadeAntes" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
-                                    </button> -->
+                                    </button>
                                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFadeAntes" data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <!--  -->
