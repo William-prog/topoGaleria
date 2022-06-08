@@ -61,7 +61,7 @@
 <body class="antialiased">
     <div id="gradient" />
     <div class="relative flex items-top justify-center min-h-screen sm:items-center py-0 sm:pt-0">
-        <div class="max-w-7xl mx-auto sm:px-0 lg:px-0" style="width: 100%;">
+        <div class="max-w-7xl mx-auto sm:px-0 lg:px-0" style="width: 35%;">
             <div class="">
                 <style>
                     .widget {
@@ -117,8 +117,8 @@
                 </style>
 
 
-                <div class="dark:bg-gray-800 overflow-hidden">
-                    <div class="row">
+                <!-- <div class="dark:bg-gray-800 overflow-hidden">
+                    <div class="row"> -->
                         <!-- <div class="col-3">
                             <div style="margin-top: 70%;" class="bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                                 <div id="carouselExampleFadeDespues" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -155,7 +155,7 @@
                                 </div>
                             </div>
                         </div> -->
-                        <div class="col-6">
+                        <!-- <div class="col-6"> -->
                             <div class="mt-1 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                                 <div id="carouselExampleFade" class="carousel slide carousel-fade sm:rounded-lg" data-bs-ride="carousel">
                                     <div class="carousel-inner">
@@ -327,7 +327,7 @@
                                 </div>
 
                             </div>
-                        </div>
+                        <!-- </div> -->
                         <!-- <div class="col-3">
                             <div style="margin-top: 70%;" class="bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                                 <div id="carouselExampleFadeAntes" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -368,13 +368,13 @@
                                 </div>
                             </div>
                         </div> -->
-                    </div>
+                    <!-- </div> -->
 
                     <!--  -->
 
 
 
-                </div>
+                <!-- </div> -->
 
 
             </div>
