@@ -24,6 +24,10 @@ Route::get('/UndergroundMining', function () {
     return view('welcomePdf');
 });
 
+Route::get('/Catalogo', function () {
+    return view('Catalogo.index');
+});
+
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
     Route::resource('imagenes', ImagenesController::class);
 
